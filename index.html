@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f15a0b">
+<meta name="description" content="Syntora Ads runs Facebook, Instagram and TikTok ads for business owners. Smart ads. Real results. Get more visibility, more leads and more sales.">
+<meta name="keywords" content="Syntora Ads, Facebook ads, Instagram ads, TikTok ads, social media management Nigeria, digital advertising, content creation, brand growth">
+<title>Syntora Ads | Smart Ads. Real Results.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --orange:#f15a0b;
+  --orange-dark:#d94800;
+  --ink:#171717;
+  --muted:#686868;
+  --line:#ece7e2;
+  --soft:#fff6ef;
+  --green:#25d366;
+  --shadow:0 18px 55px rgba(35,25,15,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:100px}
+body{font-family:"DM Sans",sans-serif;color:var(--ink);background:#fff;line-height:1.65}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit}
+button{cursor:pointer}
+img,svg{max-width:100%}
+.container{width:min(1160px,calc(100% - 42px));margin:auto}
+
+.brand{display:inline-flex;align-items:center;flex-shrink:0}
+.brand-image{display:block;width:190px;height:65px;object-fit:contain;object-position:left center}
+@media (max-width:760px){.brand-image{width:155px;height:55px}}
+
+.topline{background:#171717;color:#fff;font-size:10px;font-weight:700;letter-spacing:1.2px}
+.topline-inner{display:flex;justify-content:space-between;gap:16px;padding:9px 0}
+.topline a{color:#ffb58c}
+
+.site-header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);border-bottom:1px solid #eee}
+.nav-wrap{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:22px;position:relative}
+.nav-links{display:flex;align-items:center;gap:24px;font-size:12px;font-weight:800}
+.nav-links>a:not(.nav-cta):hover{color:var(--orange)}
+.nav-cta,.btn{display:inline-flex;justify-content:center;align-items:center;gap:9px;border-radius:8px;font-size:12px;font-weight:800;transition:.2s}
+.nav-cta{background:var(--orange);color:#fff;padding:13px 18px}
+.nav-cta:hover,.btn-primary:hover{background:var(--orange-dark);transform:translateY(-2px)}
+.menu-toggle{display:none;background:transparent;border:0;padding:7px}
+.menu-toggle span{display:block;width:25px;height:2px;background:#171717;margin:6px 0;transition:.2s}
+
+.hero{position:relative;overflow:hidden;padding:76px 0 0;background:linear-gradient(115deg,#fff 0%,#fff 55%,#fff0e5 100%)}
+.hero:before,.hero:after{content:"";position:absolute;pointer-events:none;border-radius:100px;background:var(--orange);opacity:.055;transform:rotate(-25deg)}
+.hero:before{width:390px;height:640px;right:-120px;top:-250px}
+.hero:after{width:140px;height:400px;right:25%;bottom:-300px}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.04fr .96fr;gap:44px;align-items:center;padding-bottom:62px}
+.eyebrow,.kicker{display:inline-flex;align-items:center;gap:9px;color:var(--orange);font-size:10px;font-weight:800;letter-spacing:1.6px}
+.eyebrow{padding:9px 13px;border:1px solid #f15a0b35;background:#fff8f3;border-radius:50px}
+.eyebrow-dot{width:7px;height:7px;border-radius:50%;background:var(--orange);box-shadow:0 0 0 4px #f15a0b18}
+h1,h2,h3{font-family:Manrope,sans-serif}
+.hero h1{font-size:clamp(44px,5.3vw,68px);line-height:1.06;letter-spacing:-3px;font-weight:800;margin:24px 0 20px}
+.hero h1 span,.section-heading h2 span,.contact-copy h2 span{color:var(--orange)}
+.ads-tag{display:inline-block;background:#171717;color:#fff;font-style:italic;padding:0 18px 4px 14px;transform:skewX(-10deg);border-radius:4px;margin-top:4px}
+.for-tag{display:inline-block;background:linear-gradient(90deg,var(--orange),#ff7b36);color:#fff;font-family:Manrope,sans-serif;font-weight:800;font-size:15px;letter-spacing:.4px;padding:9px 22px 9px 16px;border-radius:4px 0 0 4px;clip-path:polygon(0 0,100% 0,94% 100%,0 100%);margin-bottom:18px;text-transform:uppercase}
+.hero-lead{max-width:520px;color:#666;font-size:15px;line-height:1.95}
+.hero-lead b{color:var(--orange)}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{padding:14px 20px;border:1px solid transparent}
+.btn-primary{color:#fff;background:var(--orange);box-shadow:0 10px 25px #f15a0b30}
+.btn-outline{background:#fff;border-color:#dedede}
+.btn-outline:hover{border-color:var(--orange);color:var(--orange)}
+.hero-proof{display:flex;align-items:center;gap:12px;margin-top:27px}
+.platform-bubbles{display:flex}
+.platform-bubbles span{width:31px;height:31px;display:grid;place-items:center;border:2px solid #fff;border-radius:50%;margin-right:-5px;color:#fff;font-weight:800;font-size:15px;background:#1877f2}
+.platform-bubbles span:nth-child(2){background:linear-gradient(35deg,#ffb02e,#ed248b,#7046d7)}
+.platform-bubbles span:nth-child(3){background:#111}
+.platform-bubbles span:nth-child(4){background:#f00}
+.hero-proof p{font-size:11px;color:#777;max-width:300px}
+.hero-proof strong{color:#222}
+
+.hero-visual{min-height:460px;display:grid;place-items:center;position:relative}
+.orbit{position:absolute;width:420px;height:420px;border:1px solid #f15a0b28;border-radius:50%}
+.orbit.two{width:340px;height:340px;border-style:dashed}
+.photo-blob{position:relative;z-index:2;width:min(100%,380px);aspect-ratio:1/1.12;border-radius:50% 50% 24px 24px;background:var(--orange);overflow:hidden;box-shadow:0 25px 80px #f15a0b30}
+.photo-blob img{position:absolute;left:50%;bottom:0;transform:translateX(-50%);height:104%;width:auto;max-width:none}
+.floating-note{position:absolute;z-index:3;display:flex;align-items:center;gap:10px;background:#fff;padding:12px 15px;border-radius:12px;box-shadow:0 15px 40px #29190d18;animation:float 4s ease-in-out infinite}
+.note-top{top:30px;left:-4px}
+.note-bottom{bottom:28px;left:-8px;animation-delay:-2s}
+.note-icon{width:35px;height:35px;display:grid;place-items:center;border-radius:10px;background:#fff0e6;color:var(--orange);font-size:21px}
+.note-icon.check{background:#e7f8ef;color:#1a9b62}
+.floating-note strong,.floating-note small{display:block}
+.floating-note strong{font-size:11px}
+.floating-note small{font-size:10px;color:#888}
+.hero-sticker{position:absolute;z-index:4;bottom:15px;right:12px;width:74px;height:74px;border-radius:50%;display:grid;align-content:center;text-align:center;line-height:1.05;background:#171717;color:#fff;font-size:9px;font-weight:800;transform:rotate(12deg);box-shadow:0 10px 25px #0003}
+.hero-sticker b{font-size:15px;color:#ff7b36}
+.social-stack{position:absolute;z-index:4;right:-6px;top:34%;display:flex;flex-direction:column;gap:10px}
+.social-stack span{width:42px;height:42px;display:grid;place-items:center;border-radius:50%;border:3px solid #fff;color:#fff;font-weight:800;font-size:18px;box-shadow:0 6px 18px #0002;background:#1877f2}
+.social-stack span:nth-child(2){background:linear-gradient(35deg,#ffb02e,#ed248b,#7046d7)}
+.social-stack span:nth-child(3){background:#111}
+
+.trust-strip{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;border-top:1px solid #eae5e0;color:#999;font-size:10px;font-weight:800;letter-spacing:1.1px}
+.platforms{display:flex;align-items:center;gap:22px;color:#333;font-size:12px;letter-spacing:0;flex-wrap:wrap}
+.platforms span{display:flex;align-items:center;gap:7px}
+.platforms b{font-size:20px}
+.facebook{color:#1877f2}.instagram{color:#c13584}.tiktok{color:#111}.youtube{color:#f00}.linkedin{color:#0a66c2}.whatsapp{color:#25d366}
+
+.section{padding:90px 0}
+.section-heading{max-width:640px}
+.section-heading h2,.contact-copy h2{font-size:clamp(36px,4.3vw,53px);letter-spacing:-2.2px;line-height:1.12;margin:15px 0}
+.section-heading p,.contact-copy>p{color:#777;font-size:14px;line-height:1.9}
+.section-heading.center{text-align:center;margin:0 auto 42px}
+.section-heading.center p{max-width:600px;margin:auto}
+
+.benefits{padding:0;background:#fff}
+.benefit-bar{position:relative;z-index:5;margin-top:-1px;display:grid;grid-template-columns:repeat(4,1fr);background:#171717;border-radius:20px;padding:26px 10px;box-shadow:0 20px 50px #0002}
+.benefit{text-align:center;padding:6px 18px;border-right:1px solid #ffffff22}
+.benefit:last-child{border-right:0}
+.benefit .line-icon{margin:0 auto 12px;background:#ffffff10;color:#ff7b36}
+.benefit b{display:block;color:#ff7b36;font-family:Manrope,sans-serif;font-size:13px;letter-spacing:.6px;text-transform:uppercase}
+.benefit h3{color:#fff;font-size:15px;text-transform:uppercase;margin:1px 0 6px}
+.benefit p{color:#bbb;font-size:11px;line-height:1.6}
+.benefit-wrap{padding:54px 0 0}
+
+.services{background:#fff}
+.service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.service-card{padding:27px 24px;border:1px solid #eee9e4;border-radius:15px;background:#fff;transition:transform .25s,box-shadow .25s,border .25s}
+.service-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:#ffd6c1}
+.line-icon{width:49px;height:49px;display:grid;place-items:center;border-radius:14px;background:#fff2e9;color:var(--orange);margin-bottom:18px}
+.line-icon svg{width:27px;height:27px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.service-card h3{font-size:16px;margin-bottom:8px}
+.service-card p{font-size:12px;color:#777;line-height:1.85}
+.service-card a{display:inline-block;color:var(--orange);font-size:11px;font-weight:800;margin-top:14px}
+
+.about-band{background:#171717;color:#fff;padding:58px 0}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.about-band h2{font-size:clamp(31px,4vw,45px);line-height:1.15;letter-spacing:-1.7px;margin:13px 0}
+.about-band h2 span{color:#ff7b36}
+.about-band p{color:#c5c5c5;font-size:13px;line-height:1.95}
+.pill-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.pill-list span{border:1px solid #ffffff28;border-radius:50px;padding:8px 12px;font-size:10px;color:#f1f1f1}
+.about-points{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.about-point{padding:20px;border:1px solid #ffffff20;border-radius:13px;background:#ffffff08}
+.about-point b{display:block;color:#ff7b36;font-family:Manrope,sans-serif;font-size:25px;margin-bottom:5px}
+.about-point span{font-size:11px;color:#ddd}
+
+.packages{background:#faf9f7}
+.package-tabs{display:flex;gap:5px;width:fit-content;max-width:100%;padding:5px;margin:25px 0 30px;background:#eeeae6;border-radius:10px}
+.tab{padding:12px 17px;border:0;border-radius:7px;background:transparent;color:#777;font-size:12px;font-weight:800}
+.tab.active{background:#fff;color:var(--orange);box-shadow:0 3px 12px #24170d0d}
+.package-panel[hidden]{display:none!important}
+.pricing-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;align-items:stretch}
+.price-card{position:relative;display:flex;flex-direction:column;min-width:0;padding:25px 20px 20px;background:#fff;border:1px solid #eae5df;border-radius:15px;transition:transform .25s,box-shadow .25s}
+.price-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.price-card.featured{border:2px solid var(--orange);box-shadow:0 12px 35px #f15a0b12}
+.popular-tag{position:absolute;top:-13px;left:50%;transform:translateX(-50%);padding:5px 12px;border-radius:30px;background:var(--orange);color:#fff;font-size:8px;font-weight:800;white-space:nowrap;letter-spacing:.6px}
+.price-icon{display:grid;place-items:center;width:43px;height:43px;margin-bottom:17px;border-radius:50%;background:#fff0e5;color:var(--orange);font-size:22px}
+.plan-label{font-size:10px;font-weight:800;letter-spacing:.8px;margin-bottom:5px}
+.price-card h3{color:var(--orange);font-size:27px;letter-spacing:-1px;line-height:1.3}
+.plan-intro{color:#777;font-size:11px;min-height:38px;margin:7px 0 16px}
+.price-card ul{list-style:none;padding:14px 0;border-top:1px solid #eee7e0;flex:1}
+.price-card li{position:relative;padding-left:17px;margin:0 0 11px;font-size:10px;line-height:1.5;color:#444}
+.price-card li:before{content:"✓";position:absolute;left:0;top:0;color:var(--orange);font-weight:800}
+.duration{background:var(--orange);color:#fff;border-radius:6px;padding:10px;margin-top:10px;text-align:center;font-size:10px;font-weight:800;letter-spacing:.6px}
+.text-link{display:inline-block;margin-top:15px;color:var(--orange);font-size:11px;font-weight:800}
+.text-link:hover{color:var(--orange-dark)}
+.pricing-note{margin-top:20px;font-size:11px;color:#777;line-height:1.8}
+.ad-budget-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.budget-card{background:#fff;border:1px solid #eae5df;border-radius:14px;padding:22px}
+.budget-card h3{font-size:15px;margin-bottom:8px}
+.budget-card strong{display:block;color:var(--orange);font-family:Manrope,sans-serif;font-size:26px}
+.budget-card p{font-size:11px;color:#777;margin:5px 0 15px}
+.budget-card a{font-size:11px;color:var(--orange);font-weight:800}
+
+.process{background:#fff}
+.process-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:75px;align-items:center}
+.steps{display:flex;flex-direction:column}
+.step{display:grid;grid-template-columns:52px 1fr;gap:18px;padding:22px 0;border-bottom:1px solid #eee}
+.step:first-child{padding-top:0}
+.step:last-child{border-bottom:0}
+.step>span{width:46px;height:46px;display:grid;place-items:center;border-radius:13px;background:#fff1e8;color:var(--orange);font-family:Manrope,sans-serif;font-weight:800;font-size:13px}
+.step h3{font-size:15px;margin-bottom:6px}
+.step p{font-size:12px;color:#777;line-height:1.8}
+
+.faq{background:#faf9f7}
+.faq-grid{max-width:850px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:13px}
+details{padding:19px 20px;background:#fff;border:1px solid #ece7e2;border-radius:12px}
+summary{font-family:Manrope,sans-serif;font-size:12px;font-weight:800;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:14px}
+summary:after{content:"+";color:var(--orange);font-size:18px;line-height:1}
+details[open] summary:after{content:"−"}
+details p{font-size:12px;color:#777;line-height:1.85;padding-top:12px}
+
+.grow-banner{background:var(--orange);color:#fff;padding:54px 0;position:relative;overflow:hidden}
+.grow-banner:before{content:"";position:absolute;right:-90px;top:-120px;width:340px;height:340px;border-radius:50%;background:#ffffff14}
+.grow-grid{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.grow-title{font-family:Manrope,sans-serif;font-weight:800;line-height:1;letter-spacing:-2px}
+.grow-title small{display:inline-block;background:#171717;padding:6px 16px;font-size:20px;letter-spacing:0;transform:skewX(-8deg);border-radius:3px;text-transform:uppercase}
+.grow-title strong{display:block;font-size:clamp(60px,9vw,104px);text-transform:uppercase;margin:4px 0}
+.grow-title em{display:inline-block;background:#171717;font-style:normal;padding:7px 18px;font-size:19px;letter-spacing:0;transform:skewX(-8deg);border-radius:3px;text-transform:uppercase}
+.grow-card{background:#fff;color:var(--ink);border-radius:20px;padding:26px;box-shadow:0 20px 50px #0003}
+.grow-card small{display:block;font-size:10px;font-weight:800;letter-spacing:1.2px;color:#777}
+.grow-card .wa-line{display:flex;align-items:center;gap:14px;margin:10px 0 16px}
+.grow-card .wa-line .contact-symbol{width:56px;height:56px;border-radius:50%;font-size:28px}
+.grow-card a.num{display:block;font-family:Manrope,sans-serif;font-weight:800;font-size:clamp(22px,3vw,30px);line-height:1.2;letter-spacing:-.5px}
+.grow-card a.num:hover{color:var(--orange)}
+.grow-card .turn{display:block;text-align:center;background:var(--orange);color:#fff;border-radius:50px;padding:9px 14px;font-size:11px;font-weight:800;letter-spacing:.4px;text-transform:uppercase}
+
+.outcome-bar{background:#171717;color:#fff}
+.outcome-inner{display:grid;grid-template-columns:repeat(4,1fr);text-align:center}
+.outcome-inner span{padding:16px 10px;font-size:11px;font-weight:800;letter-spacing:.8px;text-transform:uppercase;border-right:1px solid #ffffff1f}
+.outcome-inner span:last-child{border-right:0}
+.outcome-inner b{color:#ff7b36;margin-right:6px}
+
+.contact-section{position:relative;overflow:hidden;background:#fff6ef}
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:start}
+.contact-copy{padding-top:15px}
+.contact-details{display:flex;align-items:center;gap:15px;margin-top:25px;padding:18px;background:#fff;border:1px solid #f2e4d9;border-radius:12px}
+.contact-symbol{width:46px;height:46px;display:grid;place-items:center;border-radius:12px;background:var(--green);color:#fff;font-weight:800;font-size:22px;flex-shrink:0}
+.contact-details small{display:block;font-size:9px;font-weight:800;letter-spacing:.8px;color:#777;margin-bottom:4px}
+.contact-details a{display:block;font-weight:800;font-size:14px}
+.contact-details a:hover{color:var(--orange)}
+.contact-form{padding:30px;background:#fff;border:1px solid #f1e8e0;border-radius:17px;box-shadow:0 20px 60px #4d2b1410}
+.contact-form h3{font-size:22px;letter-spacing:-.6px}
+.contact-form>p{margin:7px 0 20px;color:#777;font-size:12px;line-height:1.8}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.contact-form label{display:block;margin:13px 0 6px;font-size:11px;font-weight:800}
+.contact-form input,.contact-form select,.contact-form textarea{display:block;width:100%;border:1px solid #e4e2df;border-radius:7px;padding:12px;background:#fff;color:#222;outline:none;font-size:12px;transition:border .2s,box-shadow .2s}
+.contact-form input:focus,.contact-form select:focus,.contact-form textarea:focus{border-color:var(--orange);box-shadow:0 0 0 3px #f15a0b13}
+.contact-form textarea{resize:vertical;min-height:90px}
+.submit-btn{width:100%;margin-top:20px;border:0}
+.form-message{margin:10px 0 0;font-size:11px;color:#555}
+
+.footer{background:#171717;color:#fff}
+.footer-main{display:grid;grid-template-columns:1.1fr 1.2fr auto;align-items:center;gap:30px;padding-top:38px;padding-bottom:38px}
+.footer-main>p{max-width:400px;color:#aaa;font-size:12px;line-height:1.8}
+.footer-cta{color:#fff;background:var(--orange);padding:13px 17px;border-radius:7px;font-size:12px;font-weight:800;white-space:nowrap}
+.footer-bottom{display:flex;justify-content:space-between;gap:20px;padding-top:18px;padding-bottom:18px;border-top:1px solid #ffffff1c;color:#999;font-size:10px}
+.footer-bottom a:hover{color:#fff}
+.social-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:15px}
+.social-links a{width:33px;height:33px;display:grid;place-items:center;border:1px solid #ffffff30;border-radius:50%;font-size:12px;font-weight:800;color:#fff}
+.social-links a:hover{background:var(--orange);border-color:var(--orange)}
+.whatsapp-float{position:fixed;right:20px;bottom:20px;z-index:90;width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:#25d366;color:#fff;font-size:25px;box-shadow:0 8px 24px #0002}
+.wa-ico{width:1em;height:1em;fill:currentColor;display:block}
+.platforms b.whatsapp{display:inline-flex}
+.social-links .wa-ico{width:16px;height:16px}
+.contact-symbol .wa-ico{width:26px;height:26px}
+.grow-card .contact-symbol .wa-ico{width:32px;height:32px}
+.whatsapp-float .wa-ico{width:30px;height:30px}
+.whatsapp-float:hover{transform:translateY(-3px)}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s ease}
+.reveal.show{opacity:1;transform:translateY(0)}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+
+@media(max-width:1000px){
+  .nav-links{gap:14px}
+  .hero-grid{gap:20px}
+  .hero h1{font-size:51px}
+  .orbit{width:350px;height:350px}
+  .orbit.two{width:285px;height:285px}
+  .service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .pricing-grid,.ad-budget-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .process-grid,.contact-grid{gap:38px}
+  .footer-main{grid-template-columns:1fr 1fr}
+  .footer-cta{justify-self:start}
+  .benefit-bar{grid-template-columns:1fr 1fr;row-gap:22px}
+  .benefit:nth-child(2){border-right:0}
+}
+@media(max-width:760px){
+  .container{width:min(100% - 32px,560px)}
+  .topline-inner{justify-content:center;text-align:center}
+  .topline-inner span:last-child{display:none}
+  .nav-wrap{min-height:72px}
+  .menu-toggle{display:block;z-index:102}
+  .nav-links{position:absolute;top:100%;left:-16px;right:-16px;display:flex;flex-direction:column;align-items:stretch;gap:0;padding:0 20px;max-height:0;overflow:hidden;opacity:0;visibility:hidden;background:#fff;border-bottom:1px solid transparent;box-shadow:none;transition:max-height .3s ease,opacity .25s,padding .3s}
+  .nav-links.open{max-height:500px;opacity:1;visibility:visible;padding:12px 20px 22px;border-bottom-color:#eee;box-shadow:0 18px 25px #0000000a}
+  .nav-links>a:not(.nav-cta){padding:13px 0;border-bottom:1px solid #f1f1f1}
+  .nav-cta{margin-top:14px;text-align:center}
+  .hero{padding-top:52px}
+  .hero-grid{grid-template-columns:1fr;gap:10px;padding-bottom:30px}
+  .hero h1{font-size:clamp(43px,10vw,58px);letter-spacing:-2.5px}
+  .hero-lead{font-size:14px}
+  .hero-visual{min-height:400px;margin-top:8px}
+  .orbit{width:320px;height:320px}
+  .orbit.two{width:265px;height:265px}
+  .photo-blob{width:min(78%,330px)}
+  .floating-note{padding:9px 11px}
+  .note-top{left:0;top:0}
+  .note-bottom{left:0;bottom:0}
+  .hero-sticker{right:0;bottom:0;width:62px;height:62px}
+  .social-stack{right:0}
+  .trust-strip{flex-direction:column;align-items:flex-start;gap:15px}
+  .platforms{gap:17px}
+  .section{padding:68px 0}
+  .section-heading h2,.contact-copy h2{font-size:40px;letter-spacing:-1.8px}
+  .about-grid,.process-grid,.contact-grid,.grow-grid{grid-template-columns:1fr;gap:35px}
+  .about-band{padding:48px 0}
+  .service-grid{gap:12px}
+  .service-card{padding:20px 16px}
+  .package-tabs{width:100%}
+  .tab{flex:1;padding:11px 8px;font-size:10px}
+  .pricing-grid{gap:17px}
+  .price-card{padding:20px 15px 16px}
+  .price-card h3{font-size:23px}
+  .plan-intro{min-height:45px}
+  .faq-grid{grid-template-columns:1fr}
+  .contact-form{padding:24px 20px}
+  .footer-main{grid-template-columns:1fr;gap:20px}
+  .footer-bottom{flex-direction:column;gap:8px}
+  .outcome-inner{grid-template-columns:1fr 1fr}
+  .outcome-inner span:nth-child(2){border-right:0}
+  .outcome-inner span:nth-child(-n+2){border-bottom:1px solid #ffffff1f}
+}
+@media(max-width:420px){
+  .container{width:calc(100% - 28px)}
+  .hero h1{font-size:41px}
+  .hero-actions .btn{width:100%}
+  .hero-visual{min-height:370px}
+  .floating-note strong{font-size:9px}
+  .floating-note small{font-size:9px}
+  .note-icon{width:29px;height:29px}
+  .service-grid,.pricing-grid,.ad-budget-grid,.benefit-bar{grid-template-columns:1fr}
+  .benefit{border-right:0;border-bottom:1px solid #ffffff22;padding-bottom:18px}
+  .benefit:last-child{border-bottom:0;padding-bottom:6px}
+  .service-card{padding:23px}
+  .price-card{padding:25px}
+  .price-card li{font-size:12px}
+  .plan-intro{min-height:auto}
+  .price-card h3{font-size:29px}
+  .section-heading h2,.contact-copy h2{font-size:36px}
+  .form-row{grid-template-columns:1fr;gap:0}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+
+<body>
+<div class="topline">
+  <div class="container topline-inner">
+    <span>SYNTORA ADS · SMART ADS. REAL RESULTS.</span>
+    <span>Connect. Create. Support. Grow. &nbsp; · &nbsp; <a href="#contact">Let's grow your business ↗</a></span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="#home" class="brand" aria-label="Syntora home">
+      <img src="logo.jpeg" alt="Syntora Ads" class="brand-image">
+    </a>
+
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-links" id="mainNav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#why">Why Us</a>
+      <a href="#services">Services</a>
+      <a href="#packages">Packages</a>
+      <a href="#process">How It Works</a>
+      <a href="#faq">FAQs</a>
+      <a class="nav-cta" href="#contact">Let's Talk ↗</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div class="hero-copy reveal">
+      <div class="eyebrow"><span class="eyebrow-dot"></span>SMART ADS. REAL RESULTS.</div>
+      <h1>We run FB, IG &amp; TikTok <span class="ads-tag">ADS</span></h1>
+      <div class="for-tag">For business owners</div>
+      <p class="hero-lead">We help businesses get more visibility, attract the right audience and <b>increase sales</b> with high-converting ad campaigns.</p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#packages">Explore Our Packages ↗</a>
+        <a class="btn btn-outline" href="#services">Discover Our Services</a>
+      </div>
+
+      <div class="hero-proof">
+        <div class="platform-bubbles" aria-label="Social media platforms">
+          <span>f</span><span>◎</span><span>♪</span><span>▶</span>
+        </div>
+        <p><strong>Let's turn clicks into customers.</strong> Strategy, content, advertising and community support in one place.</p>
+      </div>
+    </div>
+
+    <div class="hero-visual" aria-label="Syntora Ads specialist">
+      <div class="orbit"></div>
+      <div class="orbit two"></div>
+
+      <div class="photo-blob">
+        <img src="social media managing.jpeg" alt="Smiling Syntora Ads specialist" loading="eager">
+      </div>
+
+      <div class="social-stack" aria-label="Facebook, Instagram and TikTok">
+        <span>f</span><span>◎</span><span>♪</span>
+      </div>
+
+      <div class="floating-note note-top">
+        <span class="note-icon">↗</span>
+        <div><strong>More visibility</strong><small>Get seen by the right people</small></div>
+      </div>
+      <div class="floating-note note-bottom">
+        <span class="note-icon check">✓</span>
+        <div><strong>Better ROI</strong><small>More sales. More profit.</small></div>
+      </div>
+      <div class="hero-sticker">SMART<br><b>ADS</b></div>
+    </div>
+  </div>
+
+  <div class="container trust-strip">
+    <span>YOUR BRAND, ACROSS THE PLATFORMS THAT MATTER</span>
+    <div class="platforms">
+      <span><b class="facebook">f</b> Facebook</span>
+      <span><b class="instagram">◎</b> Instagram</span>
+      <span><b class="tiktok">♪</b> TikTok</span>
+      <span><b class="youtube">▶</b> YouTube</span>
+      <span><b class="linkedin">in</b> LinkedIn</span>
+      <span><b class="whatsapp"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></b> WhatsApp</span>
+    </div>
+  </div>
+</section>
+
+<section class="benefits" id="why">
+  <div class="container benefit-wrap">
+    <div class="benefit-bar reveal">
+      <div class="benefit">
+        <div class="line-icon"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="16"/><circle cx="24" cy="24" r="9"/><circle cx="24" cy="24" r="2"/><path d="M24 4v6M24 38v6M4 24h6M38 24h6"/></svg></div>
+        <b>Targeted</b><h3>Audience</h3><p>Reach the right people</p>
+      </div>
+      <div class="benefit">
+        <div class="line-icon"><svg viewBox="0 0 48 48"><path d="M8 40V28h7v12M20 40V20h7v20M32 40V10h7v30"/><path d="M6 20l10-8 8 4 16-10"/></svg></div>
+        <b>High Quality</b><h3>Leads</h3><p>Get more leads that convert</p>
+      </div>
+      <div class="benefit">
+        <div class="line-icon"><svg viewBox="0 0 48 48"><path d="M8 20v8l22 8V12z"/><path d="M12 28l3 10h6l-2-8M36 18l5-3M36 24h6M36 30l5 3"/></svg></div>
+        <b>Proven</b><h3>Strategies</h3><p>Data-driven strategies that work</p>
+      </div>
+      <div class="benefit">
+        <div class="line-icon"><svg viewBox="0 0 48 48"><path d="M17 8h14l-4 7H21z"/><path d="M21 15c-9 5-12 12-12 18 0 5 4 8 15 8s15-3 15-8c0-6-3-13-12-18"/><path d="M24 22v14M28 25c-1-1-2-1.5-4-1.5s-4 1-4 3 2 2.5 4 3 4 1 4 3-2 3-4 3-3-.5-4-1.5"/></svg></div>
+        <b>Better</b><h3>ROI</h3><p>More sales. More profit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section services" id="services">
+  <div class="container">
+    <div class="section-heading center reveal">
+      <span class="kicker">WHAT WE DO</span>
+      <h2>Everything your brand needs to <span>grow online.</span></h2>
+      <p>From your first content plan to full ad campaign management, we bring the creative thinking and practical support that help your brand show up consistently and convert attention into customers.</p>
+    </div>
+
+    <div class="service-grid">
+      <article class="service-card reveal">
+        <div class="line-icon"><svg viewBox="0 0 48 48"><rect x="7" y="8" width="34" height="32" rx="5"/><path d="M7 17h34M15 12h1M21 12h1M15 24h18M15 30h12"/></svg></div>
+        <h3>Social Media Management</h3>
+        <p>Page management, content calendars, captions, scheduling and a consistent brand voice across your social channels.</p>
+        <a href="#contact">Discuss your pages ↗</a>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="line-icon"><svg viewBox="0 0 48 48"><path d="M7 8h34v25H22L12 41v-8H7z"/><path d="M15 17h18M15 23h13"/></svg></div>
+        <h3>Content Creation</h3>
+        <p>Creative post designs, campaign concepts, short-form video ideas and persuasive copy tailored to your audience.</p>
+        <a href="#contact">Plan your content ↗</a>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="line-icon"><svg viewBox="0 0 48 48"><circle cx="21" cy="21" r="13"/><path d="M30 30l11 11M21 14v14M14 21h14"/></svg></div>
+        <h3>FB, IG &amp; TikTok Advertising</h3>
+        <p>High-converting ad campaigns built to increase visibility, attract the right audience and drive enquiries, traffic and sales.</p>
+        <a href="#packages">See packages ↗</a>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="line-icon"><svg viewBox="0 0 48 48"><circle cx="17" cy="16" r="6"/><circle cx="32" cy="18" r="5"/><path d="M5 38v-4c0-7 5-11 12-11s12 4 12 11v4M29 27c7-1 13 3 13 10v1"/></svg></div>
+        <h3>Community Growth</h3>
+        <p>Audience engagement, community-building ideas and practical approaches to attract and retain relevant followers.</p>
+        <a href="#contact">Build your community ↗</a>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="line-icon"><svg viewBox="0 0 48 48"><path d="M7 39V25h8v14M20 39V17h8v22M33 39V7h8v32"/><path d="M7 17l11-8 8 4L41 4M33 4h8v8"/></svg></div>
+        <h3>Brand Strategy &amp; Positioning</h3>
+        <p>Clarify your message, audience, content pillars and campaign priorities so your brand communicates with purpose.</p>
+        <a href="#contact">Shape your strategy ↗</a>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="line-icon"><svg viewBox="0 0 48 48"><path d="M7 12h34v25H7zM7 18h34M14 7v10M34 7v10"/><path d="M14 25h7M14 30h15"/></svg></div>
+        <h3>Reporting &amp; Optimisation</h3>
+        <p>Data-driven reviews, useful metrics and recommendations so you know what is working and what to do next.</p>
+        <a href="#contact">Improve your results ↗</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="about-band" id="about">
+  <div class="container about-grid">
+    <div class="reveal">
+      <span class="kicker">ABOUT SYNTORA</span>
+      <h2>Connect. Create. Support. <span>Grow.</span></h2>
+      <p>Syntora Social Growth Hub NG, trading as Syntora Ads, is built to help brands communicate better and grow with intention online. We bring creative execution and data-driven ad strategy together, helping you stay visible, speak to the right people and turn clicks into customers.</p>
+      <p style="margin-top:13px">Whether you are launching a new business, improving an existing page or promoting a specific offer, we work with your goals and budget to develop a clear next step.</p>
+      <div class="pill-list">
+        <span>Smart ads. Real results.</span><span>Strategy first</span><span>Audience-focused</span><span>Clear communication</span>
+      </div>
+    </div>
+
+    <div class="about-points reveal">
+      <div class="about-point"><b>01</b><span>Understand your business and objectives</span></div>
+      <div class="about-point"><b>02</b><span>Build a content and campaign direction</span></div>
+      <div class="about-point"><b>03</b><span>Execute, monitor and refine</span></div>
+      <div class="about-point"><b>04</b><span>Learn from results and keep improving</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="outcome-bar">
+  <div class="container outcome-inner">
+    <span><b>◉</b>More Visibility</span>
+    <span><b>☺</b>More Leads</span>
+    <span><b>🛒</b>More Sales</span>
+    <span><b>▮</b>Business Growth</span>
+  </div>
+</div>
+
+<section class="section packages" id="packages">
+  <div class="container">
+    <div class="section-heading reveal">
+      <span class="kicker">PACKAGES &amp; PRICING</span>
+      <h2>Choose the right level of <span>support.</span></h2>
+      <p>Start with the package that suits your current goals. We can discuss a tailored plan if your business needs something different.</p>
+    </div>
+
+    <div class="package-tabs" role="tablist" aria-label="Package type">
+      <button class="tab active" data-target="management" role="tab" aria-selected="true">Campaign Management</button>
+      <button class="tab" data-target="budget" role="tab" aria-selected="false">Short Ad Plans</button>
+    </div>
+
+    <div class="package-panel" id="management">
+      <div class="pricing-grid">
+        <article class="price-card reveal">
+          <div class="price-icon">↗</div>
+          <p class="plan-label">STARTER</p>
+          <h3>₦50,000</h3>
+          <p class="plan-intro">A focused starting point for a small campaign.</p>
+          <ul>
+            <li>Ad strategy and setup</li><li>Audience research</li>
+            <li>One platform: Facebook, Instagram or TikTok</li>
+            <li>Ad creative coordination</li><li>Campaign management</li>
+            <li>7 days of management</li><li>Performance summary</li>
+          </ul>
+          <div class="duration">7 DAYS</div>
+          <a href="#contact" class="text-link choose-plan" data-plan="Starter — ₦50,000">Choose Starter ↗</a>
+        </article>
+
+        <article class="price-card featured reveal">
+          <div class="popular-tag">POPULAR CHOICE</div>
+          <div class="price-icon">✦</div>
+          <p class="plan-label">GROWTH</p>
+          <h3>₦100,000</h3>
+          <p class="plan-intro">For brands ready for a more structured campaign.</p>
+          <ul>
+            <li>Campaign strategy and setup</li><li>Audience and offer research</li>
+            <li>Facebook and Instagram campaign support</li>
+            <li>Creative direction and copy</li>
+            <li>Campaign monitoring and optimisation</li>
+            <li>14 days of management</li>
+            <li>Performance report and next steps</li>
+          </ul>
+          <div class="duration">14 DAYS</div>
+          <a href="#contact" class="text-link choose-plan" data-plan="Growth — ₦100,000">Choose Growth ↗</a>
+        </article>
+
+        <article class="price-card reveal">
+          <div class="price-icon">⬈</div>
+          <p class="plan-label">PREMIUM</p>
+          <h3>₦180,000</h3>
+          <p class="plan-intro">For businesses planning a broader campaign push.</p>
+          <ul>
+            <li>Campaign planning and setup</li><li>Audience and competitor research</li>
+            <li>Multi-placement campaign support</li>
+            <li>Creative direction and copywriting</li>
+            <li>Regular monitoring and adjustments</li>
+            <li>30 days of management</li>
+            <li>Summary report and recommendations</li>
+          </ul>
+          <div class="duration">30 DAYS</div>
+          <a href="#contact" class="text-link choose-plan" data-plan="Premium — ₦180,000">Choose Premium ↗</a>
+        </article>
+
+        <article class="price-card reveal">
+          <div class="price-icon">★</div>
+          <p class="plan-label">BUSINESS BOOST</p>
+          <h3>₦250,000</h3>
+          <p class="plan-intro">A more hands-on option for ongoing brand promotion.</p>
+          <ul>
+            <li>Campaign strategy and planning</li><li>Facebook and Instagram advertising</li>
+            <li>Content and creative coordination</li>
+            <li>Audience testing and optimisation</li>
+            <li>Campaign check-ins</li>
+            <li>Monthly performance review</li>
+            <li>Growth recommendations</li>
+          </ul>
+          <div class="duration">MONTHLY SUPPORT</div>
+          <a href="#contact" class="text-link choose-plan" data-plan="Business Boost — ₦250,000">Choose Business Boost ↗</a>
+        </article>
+      </div>
+      <p class="pricing-note">Important: Package fees are for Syntora's service and campaign management unless a written proposal states otherwise. Advertising spend paid to Meta or another platform is separate. Final deliverables, campaign duration and platform coverage will be confirmed before work begins. Results depend on the offer, audience, creative, budget and other market factors; specific outcomes are not guaranteed.</p>
+    </div>
+
+    <div class="package-panel" id="budget" hidden>
+      <div class="ad-budget-grid">
+        <article class="budget-card">
+          <h3>3-Day Ad Plan</h3><strong>₦12,000</strong>
+          <p>For a short promotional push on Facebook and Instagram.</p>
+          <a href="#contact" class="choose-plan" data-plan="3-day Facebook & Instagram plan — ₦12,000">Enquire about plan ↗</a>
+        </article>
+        <article class="budget-card">
+          <h3>4-Day Ad Plan</h3><strong>₦15,000</strong>
+          <p>A little more time to promote an offer and gather responses.</p>
+          <a href="#contact" class="choose-plan" data-plan="4-day Facebook & Instagram plan — ₦15,000">Enquire about plan ↗</a>
+        </article>
+        <article class="budget-card">
+          <h3>7-Day Ad Plan</h3><strong>₦27,000</strong>
+          <p>A week-long promotional plan for a specific business goal.</p>
+          <a href="#contact" class="choose-plan" data-plan="7-day Facebook & Instagram plan — ₦27,000">Enquire about plan ↗</a>
+        </article>
+        <article class="budget-card">
+          <h3>14-Day Ad Plan</h3><strong>₦52,000</strong>
+          <p>A longer promotional window for ongoing campaign activity.</p>
+          <a href="#contact" class="choose-plan" data-plan="14-day Facebook & Instagram plan — ₦52,000">Enquire about plan ↗</a>
+        </article>
+      </div>
+      <p class="pricing-note">Confirm whether ad spend is included before payment. The exact scope, placements and campaign objective will be agreed with you first.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section process" id="process">
+  <div class="container process-grid">
+    <div class="section-heading reveal">
+      <span class="kicker">HOW IT WORKS</span>
+      <h2>A clear process. <span>Purposeful growth.</span></h2>
+      <p>We keep the process straightforward, collaborative and focused on what you want your business to achieve.</p>
+      <a class="btn btn-primary" style="margin-top:24px" href="#contact">Start a Conversation ↗</a>
+    </div>
+
+    <div class="steps">
+      <div class="step reveal"><span>01</span><div><h3>Discovery &amp; Goal Setting</h3><p>We learn about your business, ideal audience, offer, current pages and the outcome you want to pursue.</p></div></div>
+      <div class="step reveal"><span>02</span><div><h3>Plan &amp; Prepare</h3><p>We recommend the right platforms, campaign approach, creative direction, budget and timeline.</p></div></div>
+      <div class="step reveal"><span>03</span><div><h3>Launch &amp; Manage</h3><p>Once approved, we coordinate campaign execution, monitor activity and make agreed adjustments.</p></div></div>
+      <div class="step reveal"><span>04</span><div><h3>Review &amp; Improve</h3><p>We review available results, share learnings and recommend practical next steps for continued growth.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section faq" id="faq">
+  <div class="container">
+    <div class="section-heading center reveal">
+      <span class="kicker">COMMON QUESTIONS</span>
+      <h2>Good to know <span>before we start.</span></h2>
+      <p>Here are a few things businesses commonly ask about working with Syntora.</p>
+    </div>
+
+    <div class="faq-grid">
+      <details class="reveal">
+        <summary>Does the package include advertising spend?</summary>
+        <p>Not automatically. Service fees and platform advertising spend are separate unless your approved proposal clearly says otherwise. We will confirm the budget before a campaign starts.</p>
+      </details>
+      <details class="reveal">
+        <summary>Which platforms can you support?</summary>
+        <p>Our core focus is Facebook, Instagram and TikTok ads. We can also discuss YouTube, LinkedIn and WhatsApp based on your audience, content and campaign objective.</p>
+      </details>
+      <details class="reveal">
+        <summary>Can you guarantee followers or sales?</summary>
+        <p>No responsible campaign can guarantee a specific number of followers, enquiries or sales. We focus on sound planning, relevant targeting, useful creative and transparent performance reviews.</p>
+      </details>
+      <details class="reveal">
+        <summary>What do you need from my business?</summary>
+        <p>Usually your business details, campaign objective, target audience, offer, brand assets and access or permissions needed for the agreed work. We will guide you through the requirements.</p>
+      </details>
+      <details class="reveal">
+        <summary>Can I request a custom package?</summary>
+        <p>Yes. Share your goals, timeline and estimated budget through the enquiry form and we can discuss a scope that fits your needs.</p>
+      </details>
+      <details class="reveal">
+        <summary>How do I get started?</summary>
+        <p>Choose a package or submit the enquiry form below. It will prepare a message for WhatsApp so you can confirm the details directly with our team.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="grow-banner">
+  <div class="container grow-grid">
+    <div class="grow-title reveal">
+      <small>Let's</small>
+      <strong>Grow</strong>
+      <em>Your Business!</em>
+    </div>
+    <div class="grow-card reveal">
+      <small>CONTACT US ON WHATSAPP</small>
+      <div class="wa-line">
+        <span class="contact-symbol"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></span>
+        <div>
+          <a class="num" href="https://wa.me/2349077500558" target="_blank" rel="noopener">09077500558</a>
+          <a class="num" href="https://wa.me/2347088828677" target="_blank" rel="noopener">07088828677</a>
+        </div>
+      </div>
+      <span class="turn">Let's turn clicks into customers!</span>
+    </div>
+  </div>
+</section>
+
+<section class="section contact-section" id="contact">
+  <div class="container contact-grid">
+    <div class="contact-copy reveal">
+      <span class="kicker">LET'S BUILD YOUR NEXT CHAPTER</span>
+      <h2>Ready to grow your <span>business?</span></h2>
+      <p>Tell us what you are working toward. Whether you need better content, more visibility, high-converting ads or ongoing social media support, let's talk about a practical plan for your business.</p>
+
+      <div class="contact-details">
+        <span class="contact-symbol"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></span>
+        <div>
+          <small>CHAT WITH US ON WHATSAPP</small>
+          <a href="https://wa.me/2349077500558" target="_blank" rel="noopener">09077500558</a>
+          <a href="https://wa.me/2347088828677" target="_blank" rel="noopener">07088828677</a>
+        </div>
+      </div>
+
+      <p style="font-size:11px;margin-top:12px">Prefer a quick conversation? Message us directly on WhatsApp.</p>
+
+      <div class="social-links" aria-label="Social platforms">
+        <a href="#contact" aria-label="Facebook">f</a>
+        <a href="#contact" aria-label="Instagram">◎</a>
+        <a href="#contact" aria-label="TikTok">♪</a>
+        <a href="#contact" aria-label="YouTube">▶</a>
+        <a href="#contact" aria-label="LinkedIn">in</a>
+        <a href="#contact" aria-label="WhatsApp"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+      </div>
+    </div>
+
+    <form class="contact-form reveal" id="contactForm">
+      <h3>Tell us about your project</h3>
+      <p>Complete the details and continue to WhatsApp to send your enquiry.</p>
+
+      <div class="form-row">
+        <div>
+          <label for="fullName">Full name</label>
+          <input id="fullName" name="fullName" type="text" placeholder="Your name" autocomplete="name" required>
+        </div>
+        <div>
+          <label for="businessName">Business / brand</label>
+          <input id="businessName" name="businessName" type="text" placeholder="Your business name" required>
+        </div>
+      </div>
+
+      <label for="email">Email address</label>
+      <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+
+      <label for="phone">Phone number (optional)</label>
+      <input id="phone" name="phone" type="tel" placeholder="Your phone number" autocomplete="tel">
+
+      <label for="package">Service or package</label>
+      <select id="package" name="package" required>
+        <option value="">Choose a service</option>
+        <option>Social Media Management</option>
+        <option>Content Creation</option>
+        <option>FB, IG & TikTok Advertising</option>
+        <option>Community Growth</option>
+        <option>Brand Strategy & Positioning</option>
+        <option>Reporting & Optimisation</option>
+        <option>Starter — ₦50,000</option>
+        <option>Growth — ₦100,000</option>
+        <option>Premium — ₦180,000</option>
+        <option>Business Boost — ₦250,000</option>
+        <option>3-day Facebook & Instagram plan — ₦12,000</option>
+        <option>4-day Facebook & Instagram plan — ₦15,000</option>
+        <option>7-day Facebook & Instagram plan — ₦27,000</option>
+        <option>14-day Facebook & Instagram plan — ₦52,000</option>
+        <option>Custom package — advise me</option>
+      </select>
+
+      <label for="goal">What would you like to achieve?</label>
+      <textarea id="goal" name="goal" rows="3" placeholder="For example: more leads, stronger visibility, more sales or content planning..."></textarea>
+
+      <button class="btn btn-primary submit-btn" type="submit">Continue to WhatsApp ↗</button>
+      <p class="form-message" id="formMessage" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-main">
+    <a href="#home" class="brand" aria-label="Syntora home">
+      <img src="logo.jpeg" alt="Syntora Ads" class="brand-image">
+    </a>
+    <p>Smart ads. Real results. We help businesses get more visibility, more leads and more sales through thoughtful content, social media support and purposeful advertising. Connect. Create. Support. Grow.</p>
+    <a class="footer-cta" href="#contact">Let's grow together ↗</a>
+  </div>
+
+  <div class="container footer-bottom">
+    <span>© <span id="year"></span> Syntora Social Growth Hub NG. All rights reserved.</span>
+    <span>Let's turn clicks into customers!</span>
+    <a href="#home">Back to top ↑</a>
+  </div>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/2349077500558" target="_blank" rel="noopener" aria-label="Chat with Syntora on WhatsApp"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+
+<script>
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+function closeMenu() {
+  navLinks.classList.remove("open");
+  menuToggle.classList.remove("active");
+  menuToggle.setAttribute("aria-expanded", "false");
+  menuToggle.setAttribute("aria-label", "Open navigation");
+}
+
+menuToggle.addEventListener("click", () => {
+  const open = navLinks.classList.toggle("open");
+  menuToggle.classList.toggle("active", open);
+  menuToggle.setAttribute("aria-expanded", String(open));
+  menuToggle.setAttribute("aria-label", open ? "Close navigation" : "Open navigation");
+});
+
+navLinks.querySelectorAll("a").forEach(link => link.addEventListener("click", closeMenu));
+document.addEventListener("keydown", e => { if (e.key === "Escape") closeMenu(); });
+document.addEventListener("click", e => {
+  if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) closeMenu();
+});
+
+/* Package tabs */
+const tabs = document.querySelectorAll(".tab");
+const panels = document.querySelectorAll(".package-panel");
+tabs.forEach(tab => {
+  tab.addEventListener("click", () => {
+    const target = tab.dataset.target;
+    tabs.forEach(item => {
+      const active = item === tab;
+      item.classList.toggle("active", active);
+      item.setAttribute("aria-selected", String(active));
+    });
+    panels.forEach(panel => { panel.hidden = panel.id !== target; });
+  });
+});
+
+/* Fill enquiry package when a package link is clicked */
+document.querySelectorAll(".choose-plan").forEach(link => {
+  link.addEventListener("click", () => {
+    const packageSelect = document.getElementById("package");
+    const plan = link.dataset.plan;
+    if ([...packageSelect.options].some(option => option.text === plan)) packageSelect.value = plan;
+  });
+});
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+/* Scroll reveal */
+const revealItems = document.querySelectorAll(".reveal");
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  revealItems.forEach(item => observer.observe(item));
+} else {
+  revealItems.forEach(item => item.classList.add("show"));
+}
+
+/* Contact form: prepares the enquiry in WhatsApp */
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const fullName = document.getElementById("fullName").value.trim();
+  const businessName = document.getElementById("businessName").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const selectedPackage = document.getElementById("package").value;
+  const goal = document.getElementById("goal").value.trim();
+
+  const message = [
+    "Hello Syntora Ads, I would like to make an enquiry.",
+    "",
+    "Name: " + fullName,
+    "Business/Brand: " + businessName,
+    "Email: " + email,
+    "Phone: " + (phone || "Not provided"),
+    "Service/Package: " + selectedPackage,
+    "Goal: " + (goal || "I would like to discuss my goals.")
+  ].join("\n");
+
+  const whatsappURL = "https://wa.me/2349077500558?text=" + encodeURIComponent(message);
+  const newWindow = window.open(whatsappURL, "_blank", "noopener,noreferrer");
+  const formMessage = document.getElementById("formMessage");
+
+  if (newWindow) {
+    formMessage.textContent = "WhatsApp has opened with your enquiry. Please send the message to complete your request.";
+    formMessage.style.color = "#18864b";
+  } else {
+    formMessage.textContent = "Your browser blocked the WhatsApp window. Please message 09077500558 directly.";
+    formMessage.style.color = "#b42318";
+  }
+});
+</script>
+</body>
+</html>
